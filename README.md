@@ -13,7 +13,7 @@
 ## 安装位置
 
 ```text
-C:\Users\30642\.codex\skills\lab-report
+C:\Users\xxx\.codex\skills\lab-report
 ```
 
 目录结构：
@@ -191,6 +191,7 @@ experiment/
 - 机器学习；
 - 数据库；
 - 计算机网络；
+- 操作系统:
 - 其他包含实验要求、代码、结果和固定报告模板的课程实验。
 
 它不适用于没有实验过程的普通课程论文、文献综述或正式科研论文。
