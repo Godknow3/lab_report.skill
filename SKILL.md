@@ -23,7 +23,8 @@ Produce a submission-ready report whose claims can be traced to the actual exper
 5. Draft section by section from the evidence map. Explain overall function, data flow, and key logic; include only code excerpts needed to show the method.
 6. Plan figures as part of the report rather than inserting them in bulk. Read [references/word-figure-layout.md](references/word-figure-layout.md) when producing a Word report with images, screenshots, plots, or visual comparisons.
 7. Revise for natural undergraduate writing without weakening technical accuracy. Use [references/writing-style.md](references/writing-style.md) when the user requests naturalization, reduction of formulaic AI style, or a final prose pass.
-8. Audit content and layout. Render Word output to page images, inspect every page at readable zoom, correct defects, and repeat until the document is readable and stable. Do not deliver after a content-only check.
+8. For reports containing mathematical notation, preserve existing native equations and create new equations as editable Word equations when a reliable authoring path is available. Do not imitate equations with plain text, repeated spaces, or screenshots.
+9. Audit content and layout. Render Word output to page images, inspect every page at readable zoom, correct defects, and repeat until the document is readable and stable. Do not deliver after a content-only check.
 
 ## Evidence rules
 

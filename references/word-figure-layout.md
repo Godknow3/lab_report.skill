@@ -21,8 +21,9 @@ Do not append all images at the end of a task. Place each figure immediately aft
 - Use a compact 2-by-2 grid for three or four closely related outputs only when every image remains legible. Otherwise split the group across separate rows or pages.
 - Avoid more than two detailed images per row. Do not shrink figures merely to reduce page count.
 - For a processing sequence, order figures in the same direction as the algorithm: input, intermediate result, final result.
+- Keep sizing restrained. A routine result does not need to fill the page, while a detailed plot or screenshot should not be reduced until its content becomes difficult to read.
 
-For stable Word layout, prefer inline images. Use a borderless table for side-by-side comparisons or grids when ordinary paragraph placement shifts unpredictably. Keep cell widths fixed, center images within cells, and remove visible table borders unless the supplied template uses them.
+For stable Word layout, prefer inline images. A borderless table may be used for side-by-side comparisons when ordinary paragraph placement shifts unpredictably, but do not turn every figure into a boxed card or visible table. Keep the final appearance plain and appropriate for a course assignment.
 
 ## Sizing and quality
 
@@ -38,7 +39,11 @@ For stable Word layout, prefer inline images. Use a borderless table for side-by
 
 - Put figure captions below figures and table titles above tables unless the supplied template specifies otherwise.
 - Number figures consistently across the document or within chapters, following the template.
-- Use captions that state the object, operation, and important parameter; avoid captions that only say “result image.”
+- Keep ordinary lab-report captions concise. Name the object or operation and include a parameter only when it distinguishes the result, for example `图3 绝对差分结果` or `图8 Gamma=0.5时的处理结果`.
+- Do not turn a caption into a complete analysis sentence. Put interpretation in the surrounding paragraph.
+- Avoid adding source-like, method-like, or overly formal qualifiers to every caption when the nearby heading already establishes the experiment context.
+- Use plain caption text below the image. Do not add a border, shaded label box, decorative line, colored card, or oversized caption unless the supplied template already uses that style.
+- Short course reports do not require automatic Word captions and cross-references unless the template, teacher, or document length makes them useful. A correctly numbered plain caption is sufficient when it remains stable after editing.
 - Refer to every figure in nearby prose, such as “如图3所示”, and describe at least one visible feature.
 - For a grouped comparison, use either one group caption with clear subfigure labels `(a)`, `(b)`, or separate captions; do not mix both systems inconsistently.
 
@@ -61,3 +66,5 @@ After each meaningful document update:
 5. correct defects and render again.
 
 Do not declare the report complete while any figure is clipped, stretched, too small to interpret, detached from its caption, duplicated without purpose, or inconsistent with the analysis.
+
+The goal is basic neatness rather than publication-style uniformity. Figures may differ in displayed size when their content and aspect ratios differ, provided the variation is reasonable and the page still reads naturally.
