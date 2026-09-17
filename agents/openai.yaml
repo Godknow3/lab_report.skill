@@ -1,0 +1,4 @@
+interface:
+  display_name: "实验报告工作流"
+  short_description: "依据真实代码和结果制作、填写与审查课程实验报告"
+  default_prompt: "使用 $lab-report 根据实验要求、模板、代码和真实结果完成并核验实验报告。"
