@@ -16,14 +16,14 @@ Do not append all images at the end of a task. Place each figure immediately aft
 
 ## Choose a layout by comparison purpose
 
-- Use one centered figure when fine detail matters, the image contains text, or it is the primary result.
-- Use a two-column comparison for original/result, input/output, or two parameter settings. Keep both images at equal displayed height or equal scale when the comparison depends on size.
-- Use a compact 2-by-2 grid for three or four closely related outputs only when every image remains legible. Otherwise split the group across separate rows or pages.
-- Avoid more than two detailed images per row. Do not shrink figures merely to reduce page count.
+- Default to the ordinary student workflow: insert one inline image in its own centered paragraph, then add one plain caption in the next paragraph.
+- Do not create a grid, card layout, table-based gallery, or multi-column comparison merely because several images belong to the same task.
+- Put two images on one line only when the user or template clearly expects direct side-by-side comparison and the images remain readable.
+- If several outputs form a sequence, inserting them one after another is acceptable. The report does not need publication-style figure packing.
 - For a processing sequence, order figures in the same direction as the algorithm: input, intermediate result, final result.
 - Keep sizing restrained. A routine result does not need to fill the page, while a detailed plot or screenshot should not be reduced until its content becomes difficult to read.
 
-For stable Word layout, prefer inline images. A borderless table may be used for side-by-side comparisons when ordinary paragraph placement shifts unpredictably, but do not turn every figure into a boxed card or visible table. Keep the final appearance plain and appropriate for a course assignment.
+For ordinary course reports, use inline images in normal paragraphs. Do not use tables as the default figure container, even when their borders are hidden, because Word may show editing gridlines that make the layout feel boxed. Use a borderless table only when the user explicitly requests a compact comparison. Never turn figures into cards or visible table cells.
 
 ## Sizing and quality
 
@@ -33,6 +33,7 @@ For stable Word layout, prefer inline images. A borderless table may be used for
 - Crop irrelevant application chrome and empty margins from screenshots when doing so does not hide evidence.
 - Keep text inside plots and screenshots readable at the final physical size.
 - Use the same width, crop, and alignment for images intended for direct comparison.
+- Do not force unrelated images to exactly the same width. Choose a moderate size that keeps the subject visible and leaves normal page margins.
 - Prefer original output files over screenshots of those files.
 
 ## Captions and references
@@ -44,6 +45,7 @@ For stable Word layout, prefer inline images. A borderless table may be used for
 - Avoid adding source-like, method-like, or overly formal qualifiers to every caption when the nearby heading already establishes the experiment context.
 - Use plain caption text below the image. Do not add a border, shaded label box, decorative line, colored card, or oversized caption unless the supplied template already uses that style.
 - Short course reports do not require automatic Word captions and cross-references unless the template, teacher, or document length makes them useful. A correctly numbered plain caption is sufficient when it remains stable after editing.
+- A caption may be as simple as `图1 背景图` or `图4 阈值化结果`. Do not add borders, source labels, parameter lists, or explanatory sentences unless they are needed to distinguish the image.
 - Refer to every figure in nearby prose, such as “如图3所示”, and describe at least one visible feature.
 - For a grouped comparison, use either one group caption with clear subfigure labels `(a)`, `(b)`, or separate captions; do not mix both systems inconsistently.
 
@@ -67,4 +69,4 @@ After each meaningful document update:
 
 Do not declare the report complete while any figure is clipped, stretched, too small to interpret, detached from its caption, duplicated without purpose, or inconsistent with the analysis.
 
-The goal is basic neatness rather than publication-style uniformity. Figures may differ in displayed size when their content and aspect ratios differ, provided the variation is reasonable and the page still reads naturally.
+The goal is basic neatness rather than publication-style uniformity. The result should look like images inserted into a normal Word assignment, not a designed image gallery. Figures may differ in displayed size when their content and aspect ratios differ, provided the variation is reasonable and the page still reads naturally.
