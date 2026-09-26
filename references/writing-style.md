@@ -61,9 +61,9 @@ Use these as direction, not fixed replacements:
 - Stiff: `uint8直接相减可能出现下溢。`
   Natural: `为了保留负差值，计算前先把数组转成int16，取绝对值后再转回uint8。`
 - Stiff: `超出灰度范围的结果需要进行截断。`
-  Natural: `convertScaleAbs把计算结果限制在0到255之间。`
+  Natural, when the code uses clipping: `计算后用np.clip把像素值限制在0到255，再转成uint8保存。`
 - Stiff: `双线性插值根据周围4个像素计算新位置的灰度值。`
-  Natural: `旋转和缩放使用INTER_LINEAR，边缘比最近邻插值平滑一些。`
+  Natural: `旋转和缩放使用INTER_LINEAR计算新位置的像素值。` Add a comparison such as `边缘比最近邻插值平滑一些` only when actual comparison outputs support it.
 - Stiff: `实验结果充分验证了该方法的有效性。`
   Natural: `差分图中行人位置变亮，背景大部分保持较暗，说明这组图片可以用来分离前景。`
 

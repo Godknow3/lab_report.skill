@@ -88,7 +88,7 @@ D:\项目\experiment
 
 ## 工作流程
 
-Skill 默认按以下顺序处理完整实验报告：
+完整实验报告通常按以下依赖关系推进，具体步骤可随材料和任务调整；局部修改只检查相关内容及其依赖：
 
 ```text
 读取实验要求与模板
@@ -168,7 +168,7 @@ Skill 默认按照普通 Word 作业的方式插图：
 - 图注使用普通文字即可，不加边框、底色或卡片装饰；
 - 图片尺寸按内容决定，不要求每张完全一样，也不故意放得特别大或特别小；
 - 短报告可以使用手动编号的简洁图注，不强制建立复杂的自动交叉引用；
-- 默认正文不设置首行缩进，避免回车后下一段自动出现无法直接删除的缩进；
+- 模板未规定时，默认正文不设置首行缩进；模板已有设置时保留原设置；
 - 尽量少使用破折号连接解释，优先拆成普通短句。
 
 语言应围绕本次代码和结果来写，不要额外补成教材式说明。例如，代码把数组转为 `int16` 时，可以直接写“为了保留负差值，先转成 `int16`，取绝对值后再转回 `uint8`”，不必单独写“直接相减可能出现下溢”。
@@ -187,7 +187,7 @@ experiment/
 └─ requirements.txt
 ```
 
-报告任务开始前，应删除无关的旧输出或明确哪些文件属于最终版本，避免 Agent 将过时结果写入报告。
+报告任务开始前，应明确哪些文件属于当前代码和参数对应的最终结果；保留原始材料和仍需比较的旧输出，避免误用过时结果或为了整理而删除证据。
 
 ## 使用边界
 
@@ -270,3 +270,12 @@ Skill 会让各部分篇幅由实际实验内容决定，不会为了整齐而�
 ```text
 使用 $skill-creator 更新 $lab-report，增加……规则。
 ```
+
+提示词维护应遵循以下边界（官方资料核对于 2026-09-26）：
+
+- 用目标、约束和验收标准指导执行。固定流程只用于证据核验、模板保留等确有必要的环节；身份、规则、示例、上下文是可选的组织方式，无需强制凑齐四段或 XML 标签。[Prompt engineering](https://developers.openai.com/api/docs/guides/prompt-engineering)
+- 优先保持说明简洁，示例用于消除真实歧义；推理模型可先尝试无示例提示，不要求输出内部思维链。[Reasoning best practices](https://developers.openai.com/api/docs/guides/reasoning-best-practices)
+- `SKILL.md` 保存稳定规则，`references/` 按任务需要读取，实验文件和参数由具体任务提供，避免反复塞入全部资料。[Build skills](https://learn.chatgpt.com/docs/build-skills)
+- Markdown 也是可版本管理的提示词。将核心文件、引用和代表性验证场景纳入 Git；结构检查通过不等于实际行为通过，场景见 `references/evidence-and-audit.md`。
+- 可复用 Prompt 对象和 `v1/prompts` 计划于 2026-11-30 停用，涉及 API 中保存的 Prompt 对象，不要求把本地 Markdown skill 改成程序源码。[Deprecations](https://developers.openai.com/api/docs/deprecations)
+- 如果将工作流接入自己的 API 应用，把稳定且会重复使用的内容放在共同前缀，变化的输入放后面；缓存还取决于模型、设置、前缀匹配和有效期。不能仅凭 skill 文件的排列宣称 Codex 已命中缓存或节省了费用。[Prompt caching](https://developers.openai.com/api/docs/guides/prompt-caching)

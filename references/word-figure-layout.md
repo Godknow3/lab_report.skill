@@ -23,7 +23,7 @@ Do not append all images at the end of a task. Place each figure immediately aft
 - For a processing sequence, order figures in the same direction as the algorithm: input, intermediate result, final result.
 - Keep sizing restrained. A routine result does not need to fill the page, while a detailed plot or screenshot should not be reduced until its content becomes difficult to read.
 
-For ordinary course reports, use inline images in normal paragraphs. Do not use tables as the default figure container, even when their borders are hidden, because Word may show editing gridlines that make the layout feel boxed. Use a borderless table only when the user explicitly requests a compact comparison. Never turn figures into cards or visible table cells.
+For ordinary course reports, use inline images in normal paragraphs. Do not use tables as the default figure container, even when their borders are hidden, because Word may show editing gridlines that make the layout feel boxed. Use a borderless table when the user requests a compact comparison or the supplied template requires it. These are defaults; preserve an explicitly requested or template-defined layout.
 
 ## Sizing and quality
 
